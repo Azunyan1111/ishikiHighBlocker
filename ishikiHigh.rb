@@ -27,7 +27,6 @@ def ishikiTakai? (friend)
   @keywords.each do |kw|
     points += kw[1].to_i if friend[:desc].include?(kw[0])
   end
-  puts friend[:desc], points
   return points >= 5
 end
 
