@@ -45,7 +45,7 @@ end
 target = ARGV[0]
 filter_ishiki_takai_followers(target).each do |f|
   # TODO: FF内かどうかチェックしてからblock
-  # @twitter_client.block(f[:id])
+   @twitter_client.block(f[:id])
   write_csv(f[:id])
   puts "blocked #{f[:name]}"
 end
